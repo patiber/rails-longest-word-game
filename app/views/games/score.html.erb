@@ -1,0 +1,13 @@
+<h1 class="m-3 text-center">Score</h1>
+
+<div class="container">
+  <div class="score shadow p-2 mb-5 bg-primary rounded">
+    <p>Your score is: <strong><%= @score[:score] %></strong> </p>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <p class="message"><%= @score[:message] %></p>
+    </div>
+  </div>
+  <p class=".text-primary p-3"><%= link_to "Play Again", new_path, :style=> 'text-decoration:none' %></p>
+</div>
